@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Loading Controller-->
+        <scene sceneID="GNX-Kx-bD0">
+            <objects>
+                <viewController storyboardIdentifier="LoadingController" id="8wG-DT-WAg" customClass="LoadingController" customModule="Hackathon2022" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q2R-20-bGg">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZ6-gg-BUQ" userLabel="Dim View">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.69639617717818714" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pUS-kY-nfD" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="97.666666666666686" y="324.66666666666669" width="195" height="195.00000000000006"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pUS-kY-nfD" secondAttribute="height" multiplier="1:1" id="55D-ZM-ndT"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="LoadingAnimation"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qTW-pi-u7F"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pUS-kY-nfD" firstAttribute="centerY" secondItem="Q2R-20-bGg" secondAttribute="centerY" id="Anl-ph-UB9"/>
+                            <constraint firstItem="eZ6-gg-BUQ" firstAttribute="top" secondItem="Q2R-20-bGg" secondAttribute="top" id="Goj-D2-cAS"/>
+                            <constraint firstItem="eZ6-gg-BUQ" firstAttribute="leading" secondItem="qTW-pi-u7F" secondAttribute="leading" id="P10-Q4-SHC"/>
+                            <constraint firstItem="pUS-kY-nfD" firstAttribute="centerX" secondItem="Q2R-20-bGg" secondAttribute="centerX" id="P3f-TC-gzM"/>
+                            <constraint firstItem="eZ6-gg-BUQ" firstAttribute="trailing" secondItem="qTW-pi-u7F" secondAttribute="trailing" id="kBi-FS-bKX"/>
+                            <constraint firstItem="pUS-kY-nfD" firstAttribute="width" secondItem="Q2R-20-bGg" secondAttribute="width" multiplier="0.5" id="x9n-VP-0Ty"/>
+                            <constraint firstAttribute="bottom" secondItem="eZ6-gg-BUQ" secondAttribute="bottom" id="zcJ-NI-7tA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lottieView" destination="pUS-kY-nfD" id="QSk-Kp-vdQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6lC-tm-MRQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5318" y="1536"/>
+        </scene>
+    </scenes>
+</document>

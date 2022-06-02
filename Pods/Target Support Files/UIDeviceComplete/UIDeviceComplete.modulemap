@@ -1,0 +1,6 @@
+framework module UIDeviceComplete {
+  umbrella header "UIDeviceComplete-umbrella.h"
+
+  export *
+  module * { export * }
+}

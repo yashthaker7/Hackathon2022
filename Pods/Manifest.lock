@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (5.5.0)
+  - lottie-ios (3.3.0)
+  - PryntTrimmerView (4.0.2)
+  - SkeletonView (1.29.2)
+  - SwiftMessages (9.0.6):
+    - SwiftMessages/App (= 9.0.6)
+  - SwiftMessages/App (9.0.6)
+  - UIDeviceComplete (2.8.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - lottie-ios
+  - PryntTrimmerView
+  - SkeletonView
+  - SwiftMessages
+  - UIDeviceComplete
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - lottie-ios
+    - PryntTrimmerView
+    - SkeletonView
+    - SwiftMessages
+    - UIDeviceComplete
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
+  PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
+  SkeletonView: 915a80ecc2b6421ab7ac0f0212321c0cc1406472
+  SwiftMessages: f0c7ef4705a570ad6c5e208b611f4333e660ed92
+  UIDeviceComplete: 650358fc83f2ae420af4d7b416233313a1b440b5
+
+PODFILE CHECKSUM: 1e5dde7a0ad827228b85a5982695b0c412f8ee91
+
+COCOAPODS: 1.11.2
